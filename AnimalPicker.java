@@ -4,12 +4,19 @@ import java.util.Scanner;
 
 public class AnimalPicker {
 
-    private static final Ani[] Ani = new Ani[2];
+    
+    private static final Ani[] Ani = new Ani[5];
     private static final Scanner scanner = new Scanner(System.in);
 
     static {
-        Ani[0] = new Ani("DOG PRINTED");
-        Ani[1] = new Ani("CAT PRINTED");
+        Ani[0] = new Ani("  .\r\n" + // DOG 
+                        " ..^____/\r\n" + //
+                        "`-. ___ )\r\n" + //
+                        "  ||  || mh\r\n" + //
+                        "");
+        Ani[1] = new Ani("|\\---/|\r\n" + // CAT
+                        "| o_o |\r\n" + //
+                        " \\_^_/");
 
     }
 
@@ -30,6 +37,7 @@ public class AnimalPicker {
             System.out.println(Ani[0].name);
 
     }
+
     if(choice == 2){
 
         System.out.println(Ani[1].name);
@@ -41,19 +49,21 @@ public class AnimalPicker {
 
 }
 
-static class Ani {
-    private final String name;
+    static class Ani {
+        private final String name;
 
-    public Ani(String name) {
-        this.name = name;
-    }
+        public Ani(String name) {
+            this.name = name;
+        }
 
-    public String getName() {
-        return name;
+        public String getName() {
+            return name;
+        
+        }
     }
 
 }
 
-    
-    
-}
+
+
+
