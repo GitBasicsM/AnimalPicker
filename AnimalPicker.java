@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class AnimalPicker {
 
     
-    private static final Ani[] Ani = new Ani[5];
+    private static final Ani[] Ani = new Ani[2];
     private static final Scanner scanner = new Scanner(System.in);
 
     static {
